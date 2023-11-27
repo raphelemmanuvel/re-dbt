@@ -9,7 +9,7 @@ services:
     ports:
       - "8000:8000"
     environment:
-      SNOWFLAKE_ACCOUNT: accpunt.ca-central-1.aws
+      SNOWFLAKE_ACCOUNT: account.ca-central-1.aws
       SNOWFLAKE_USER: ***********
       SNOWFLAKE_PASSWORD: ***********
       SNOWFLAKE_USER_ROLE: accountadmin
