@@ -1,0 +1,18 @@
+version: "3"
+
+services:
+  dbt:
+    command: python3 services.py --cmd build
+    build: .
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
+    environment:
+      SNOWFLAKE_ACCOUNT: accpunt.ca-central-1.aws
+      SNOWFLAKE_USER: ***********
+      SNOWFLAKE_PASSWORD: ***********
+      SNOWFLAKE_USER_ROLE: accountadmin
+      SNOWFLAKE_DATABASE: dbt_snowflake
+      SNOWFLAKE_SCHEMA: PUBLIC
+      SNOWFLAKE_WAREHOUSE: DBT_SF_WH

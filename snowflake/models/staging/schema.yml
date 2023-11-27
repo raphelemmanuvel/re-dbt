@@ -1,0 +1,10 @@
+
+version: 2
+
+models:
+  - name: stg_football_matches
+    description: "Data from FiveThirtyEight that displays football matches and the predictions for each match"
+
+
+  - name: stg_global_rankings
+    description: "Data from FiveThirtyEight that displays worldwide rankings"

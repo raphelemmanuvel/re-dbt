@@ -1,0 +1,5 @@
+version: 2
+
+models:
+  - name: mart_football_info
+    description: Table that displays football matches along with each team's world ranking.
